@@ -5,7 +5,7 @@
 }
 
 .wrapper {
-    height: 1372px;
+    min-height: 1372px;
     display: grid;
     grid-template-columns: 1fr 40% 1fr 40% 1fr;
     grid-template-rows: 55px 111px 1fr 55px;
@@ -14,6 +14,7 @@
     background-position: center;
     background-size: cover;
     font-family: Titillium Web, Arial, sans-serif;
+    overflow: hidden;
 
     header {
         grid-column: 1/-1;

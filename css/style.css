@@ -6,7 +6,7 @@
 }
 
 .wrapper {
-  height: 1372px;
+  min-height: 1372px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 40% 1fr 40% 1fr;
@@ -18,6 +18,7 @@
   background-position: center;
   background-size: cover;
   font-family: Titillium Web, Arial, sans-serif;
+  overflow: hidden;
 }
 
 .wrapper header {
@@ -100,7 +101,7 @@
 .wrapper section.right a {
   display: block;
   text-align: center;
-  opacity: .2;
+  opacity: .3;
 }
 
 .form, .form2, .form3,
@@ -303,11 +304,6 @@ button {
   text-shadow: 1px 1px 0px #51850e;
 }
 
-.smallBtn {
-  width: 139px;
-  height: 41px;
-}
-
 .smallBtn.done {
   background-color: #bcdb97;
 }
@@ -329,5 +325,78 @@ button {
       align-self: flex-start;
   margin-left: 21px;
   width: 149px;
+}
+
+@media (max-width: 940px) {
+  .wrapper {
+    -ms-grid-columns: 1fr 40% 1fr;
+        grid-template-columns: 1fr 40% 1fr;
+    grid-auto-rows: -webkit-max-content;
+    grid-auto-rows: max-content;
+    background-repeat: repeat;
+  }
+  .wrapper section.right {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2 / 3;
+    grid-row: 5 / -1;
+  }
+  .wrapper section.right .downLogo {
+    margin-bottom: 55px;
+  }
+}
+
+@media (max-width: 450px) {
+  .wrapper header .logo {
+    width: 310px;
+  }
+  .wrapper header .logo img {
+    width: 100%;
+  }
+  .wrapper h2 {
+    font-size: 26px;
+  }
+  .form, .form2, .form3,
+  .form4, .form5 {
+    width: 300px;
+  }
+  .form .register, .form2 .register, .form3 .register, .form4 .register, .form5 .register, .form2 .contact, .form3 .sign,
+  .form3 .recover,
+  .form4 .sign,
+  .form4 .recover, .form5 .subscribe {
+    width: 262px;
+  }
+  input,
+  select {
+    width: 218px;
+    text-indent: 24%;
+    font-size: 15px;
+  }
+  textarea {
+    width: 218px;
+    font-size: 15px;
+  }
+  .checkbox {
+    font-size: 16px;
+  }
+  .checkbox::before {
+    width: 13px;
+    height: 14px;
+  }
+  input[type=checkbox]:checked + .checkbox::after {
+    width: 10px;
+    height: 11px;
+    top: -16px;
+    left: 3px;
+  }
+  button {
+    width: 219px;
+    height: 38px;
+    font-size: 18px;
+  }
+  .smallBtn.right,
+  .smallBtn.left {
+    width: 100px;
+  }
 }
 /*# sourceMappingURL=style.css.map */

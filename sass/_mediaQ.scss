@@ -1,0 +1,94 @@
+@media (max-width: 940px) {
+
+    .wrapper {
+        grid-template-columns: 1fr 40% 1fr;
+        grid-auto-rows: max-content;
+        background-repeat: repeat;
+
+        section.right {
+            grid-column: 2 / 3;
+            grid-row: 5 / -1;
+
+            .downLogo {
+                margin-bottom: 55px;
+            }
+
+        }
+
+    }
+
+}
+
+@media (max-width: 450px) {
+
+    .wrapper {
+
+        header {
+
+            .logo {
+                width: 310px;
+
+                img {
+                    width: 100%;
+                }
+
+            }
+
+        }
+
+        h2 {
+            font-size: 26px;
+        }
+
+
+
+    }
+
+    .form {
+        width: 300px;
+
+        .register {
+            width: 262px;
+        }
+
+    }
+
+    input,
+    select {
+        width: 218px;
+        text-indent: 24%;
+        font-size: 15px;
+    }
+
+    textarea {
+        width: 218px;
+        font-size: 15px;
+    }
+
+    .checkbox {
+        font-size: 16px;
+    }
+
+    .checkbox::before {
+        width: 13px;
+        height: 14px;
+    }
+
+    input[type=checkbox]:checked+.checkbox::after {
+        width: 10px;
+        height: 11px;
+        top: -16px;
+        left: 3px;
+    }
+
+    button {
+        width: 219px;
+        height: 38px;
+        font-size: 18px;
+    }
+
+    .smallBtn.right,
+    .smallBtn.left {
+        width: 100px;
+    }
+}
