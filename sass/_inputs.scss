@@ -1,0 +1,68 @@
+input {
+    display: block;
+    width: 338px;
+    height: 39px;
+    border-radius: 3px;
+    border: 1px solid #c6c6c6;
+    box-shadow: 1px 2px 0px 0px #ffffff;
+    outline: none;
+    text-indent: 28%;
+    @include fontStyle($fontF, 16px, $fontC);
+    background-image: url('../img/shape.png');
+    background-position-x: 20%;
+    background-position-y: center;
+    background-repeat: no-repeat;
+}
+
+input.user {
+    background-image: url('../img/user.png'), url('../img/shape.png');
+    background-position-x: 7%, 20%;
+}
+
+input.password {
+    background-image: url('../img/lock.png'), url('../img/shape.png');
+    background-position-x: 7%, 20%;
+}
+
+input.email {
+    background-image: url('../img/envelope.png'), url('../img/shape.png');
+    background-position-x: 7%, 20%;
+}
+
+input.phone {
+    background-image: url('../img/phone.png'), url('../img/shape.png');
+    background-position-x: 8%, 20%;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    appearance: none;
+}
+
+select {
+    width: 338px;
+    height: 39px;
+    border-radius: 3px;
+    border: 1px solid #c6c6c6;
+    box-shadow: 1px 2px 0px 0px #ffffff;
+    outline: none;
+    @include fontStyle($fontF, 16px, $fontC);
+    appearance: none;
+    text-indent: 28%;
+    background-image: url('../img/map.png'), url('../img/shape.png'), url('../img/arrow.png');
+    background-repeat: no-repeat;
+    background-position-x: 8%, 20%, 95%;
+    background-position-y: center;
+}
+
+textarea {
+    width: 338px;
+    height: 230px;
+    resize: none;
+    border-radius: 3px;
+    border: 1px solid #c6c6c6;
+    padding-top: 15px;
+    box-shadow: 1px 2px 0px 0px #ffffff;
+    outline: none;
+    @include fontStyle($fontF, 16px, $fontC);
+    text-indent: 7%;
+}

@@ -1,0 +1,35 @@
+.checkbox {
+    display: inline-block;
+    align-self: flex-start;
+    margin-left: 24px;
+    cursor: pointer;
+    @include fontStyle($fontF, 18px, $fontC);
+}
+
+input[type=checkbox] {
+    display: none;
+}
+
+.checkbox::before {
+    content: "";
+    display: inline-block;
+    width: 23px;
+    height: 24px;
+    margin-right: 10px;
+    vertical-align: middle;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    border: solid 1px #c6c6c6;
+}
+
+input[type=checkbox]:checked+.checkbox::after {
+    content: "";
+    display: block;
+    position: relative;
+    top: -20px;
+    left: 6px;
+    width: 13px;
+    height: 14px;
+    border-radius: 3px;
+    background-color: #88c814;
+}
