@@ -1,2 +1,5 @@
 # FormPage
-Project 1 - WebDev Challenge
+Inspired by WebDev Challenge - project 1.
+
+Used: flex-box + css grid;
+First steps with SASS.
